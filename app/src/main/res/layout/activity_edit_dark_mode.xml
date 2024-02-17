@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/gradient_cornflower"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradient_cornflower"
+    tools:context=".EditDarkMode">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/set_the_value_on_the_other_screen"
+        android:text="@string/change_dark_mode"
         android:id="@+id/tvInfo"
         android:textSize="24sp"
         android:textColor="@color/white"
@@ -30,8 +30,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvInfo"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo"/>
 
     <Button
         android:id="@+id/btnNavigate"
@@ -41,7 +40,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/chkDarkMode"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/chkDarkMode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
